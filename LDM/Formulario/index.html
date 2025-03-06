@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+      
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        <br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+        <br><br>
+      
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="110" placeholder="Introduce tu edad" required>
+        <br><br>
+      
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        <br><br>
+       
+        <label for="color_favorito">Color favorito:</label>
+        <input type="color" id="color_favorito" name="color_favorito" required>
+        <br><br>
+        
+        <label for="sobre_ti">Escribe algo sobre ti:</label>
+        <textarea id="sobre_ti" name="sobre_ti" rows="4" cols="50" placeholder="Escribe algo interesante sobre ti" required></textarea>
+        <br><br>
+       
+        <label for="provincia">Selecciona de qué provincia de Andalucía eres:</label>
+        <select id="provincia" name="provincia" required>
+            <option value="" disabled selected>Elige una provincia</option>
+            <option value="almeria">armeria</option>
+            <option value="cadiz">Cádi</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="granada">Grana</option>
+            <option value="huelva">werva</option>
+            <option value="jaen">Jaén</option>
+            <option value="malaga">Málaga</option>
+            <option value="sevilla">zevilla</option>
+        </select>
+        <br><br>
+ 
+        <label for="telefono">Tu teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número" required>
+        <br><br>
+
+        <label for="mes_favorito">Mes favorito del año:</label>
+        <input type="month" id="mes_favorito" name="mes_favorito" required>
+        <br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino" required>
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="sexo" value="otro" required>
+        <label for="otro">Otro</label>
+        <label for="sexo">Selecciona tu sexo:</label>
+        <select id="provincia" name="provincia" required>
+            <option value="" disabled selected>Elige tu sexo</option>
+            <option value="Greninja">Greninja</option>
+            <option value="Haxorus">Haxorus</option>
+            <option value="Hawlucha">Hawlucha</option>
+            <option value="Talonflame">Talonflame</option>
+            <option value="Noivern">Noivern</option>
+            <option value="Heracross">Heracross</option>
+        </select>
+        <br><br>
+
+        <label for="email">Dirección email:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+        <br><br>
+
+        <label for="imagen">Sube una imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+        <br><br>
+
+        <label for="progreso_html">¿Cuál es tu progreso en HTML?</label>
+        <input type="range" id="progreso_html" name="progreso_html" min="0" max="100" value="50" required>
+        <br><br>
+
+        <label>Lista de comidas:</label><br>
+        <input type="checkbox" id="Kebab" name="comidas[]" value="Kebab">
+        <label for="Kebab">Kebab</label><br>
+        <input type="checkbox" id="Hamburguesa" name="comidas[]" value="Hamburguesa">
+        <label for="Hamburguesa">Hamburguesa</label><br>
+        <input type="checkbox" id="Jamon" name="comidas[]" value="Jamon">
+        <label for="Jamon">Jamon</label><br>
+        <input type="checkbox" id="Croquetas" name="comidas[]" value="Croquetas">
+        <label for="Croquetas">Croquetas</label><br><br>
+
+        <label for="hobbies">Selecciona tus hobbies:</label>
+        <select id="hobbies" name="hobbies[]" multiple required>
+            <option value="Futbol">Futbol</option>
+            <option value="Cine">Cine</option>
+            <option value="Baile">Baile</option>
+            <option value="Coleccionar">Coleccionar</option>
+            <option value="Salir">Salir</option>
+        </select>
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

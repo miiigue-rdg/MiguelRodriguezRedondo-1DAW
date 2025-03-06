@@ -1,0 +1,66 @@
+body {
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contenedor {
+    padding: 300px;
+    background: linear-gradient(to bottom, #a7e8f5, #ffffff);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #000;
+}
+
+
+.caja {
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.caja1 {
+    background-color: #ef2f30
+}
+
+.caja2 {
+    background-color: #5db67a; 
+}
+
+.caja3 {
+    background: linear-gradient(to right, #ff9501, #ff5821);
+}
+
+.caja4 {
+    background: radial-gradient(circle, #002d8e, #00e5ff);
+}
+
+.caja5 {
+    background: linear-gradient(to right, #4cfbb5, #00cfff, #000bff);
+}
+
+.caja6 {
+    background: linear-gradient(to bottom right, #e93b94, #ffc371); 
+}
+
+.caja7 {
+    background: radial-gradient(circle, #fdf4e5, #f4cb79, #43bdd4); 
+}
+
+.caja8 {
+    background: radial-gradient(circle at bottom left, #f55336, #fcea3d, #2d9ae8);
+}
+
+.caja9 {
+    background: conic-gradient(black,rgb(0, 36, 241),rgb(199, 6, 173),purple,rgb(7, 7, 7) );
+    border-radius: 15px;
+}
